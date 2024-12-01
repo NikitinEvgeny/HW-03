@@ -1,0 +1,221 @@
+
+.gallery_slider 
+{
+
+ margin-left: auto;
+ margin-right: auto;
+text-align: center;
+ max-width: 1300px;
+
+}
+
+
+.slider_wrapper {
+ display: grid;
+ grid-template-columns: repeat(10, 1fr);
+ gap: 10px;
+ font-size: 0;
+ list-style: none;
+ margin-bottom: 30px;
+ overflow-x: auto;
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+
+}   
+
+.conteiner_img
+{
+display: inline-block;
+width: 255px;
+height: 255px;
+border: 1px solid rgb(113, 110, 108);*/
+box-sizing: border-box;
+overflow: hidden;
+border-radius: 8px;
+}
+
+
+.img_fit:hover{
+cursor: pointer;
+}
+
+
+.pointers{
+position: relative;
+}
+
+
+.pointers_right{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #ffffff;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    right: 1px;
+    text-align: center;
+}
+
+.pointers_left{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #ffffff;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.triangle_right {
+    border-top: 10px solid transparent;
+    border-left: 20px solid rgb(241, 19, 19);
+    border-bottom: 10px solid transparent;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-40%,-50%);
+}
+
+
+.triangle_left{
+
+   border-top: 10px solid transparent;
+    border-right: 20px solid rgb(241, 19, 19);
+    border-bottom: 10px solid transparent;
+    position:absolute;
+left:50%;
+top:50%;
+transform: translate(-60%,-50%);
+}
+
+
+.slider__demo {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+
+
+  .active__demo {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+
+  .slider__container__demo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5d5c5c9e;
+    width: 80vw;
+    height: 80vh;
+  }
+
+
+  .slider__btn__demo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 20px;
+    color: #fffcfc;
+    font-size: 60px;
+    z-index: 10;
+  }
+  
+  .slider__btn_left__demo {
+    left: 25px;
+  }
+  
+  .slider__btn_right__demo {
+    right: 25px;
+  }
+  
+  .slider__close__demo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 60px;
+    padding: 20px;
+    color: #fffcfc;
+    background: none;
+    border: none;
+  }
+
+  .img_fit__pic__demo {
+    -position: absolute;
+    width: 100%;
+     height: 100%;
+     object-fit: cover;
+
+    }
+
+    .cl-btn-2__demo {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .cl-btn-2__demo {
+        cursor: pointer;
+        position: relative;  
+        height: 68px;
+        width: 50px;
+    }
+    .cl-btn-2__demo .leftright__demo {
+        height: 4px;
+        width: 50px;
+        position: absolute;
+        margin-top: 24px;
+        background-color: #fcfeff;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        transition: all .3s ease-in;
+    }
+    .cl-btn-2__demo .rightleft__demo {
+        height: 4px;
+        width: 50px;
+        position: absolute;
+        margin-top: 24px;
+        background-color: #fcfeff;
+        border-radius: 2px;
+        transform: rotate(-45deg);
+        transition: all .3s ease-in;
+    }
+    .cl-btn-2__demo .close-btn__demo {
+        margin: 54px 0 0 -5px;
+        position: absolute;
+        color: #fcfeff;
+        font-family: Tahoma, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all .3s ease-in;
+        opacity: 0; 
+    }
+    .cl-btn-2__demo div:hover .leftright__demo {
+        transform: rotate(-45deg);
+        background-color: #b8b6b6;
+    }
+    .cl-btn-2__demo div:hover .rightleft__demo {
+        transform: rotate(45deg);
+        background-color: #b8b6b6;
+    }
+    .cl-btn-2__demo div:hover .close-btn__demo {
+        opacity: 1;
+    }

@@ -1,0 +1,67 @@
+.grid { 
+display: grid; 
+grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+justify-content: space-between;
+grid-row-gap: 40px; 
+grid-column-gap: 20px; 
+grid-auto-rows: minmax(50px, auto);
+justify-items: center;
+align-items: stretch;
+
+} 
+
+.item { 
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+} 
+
+.wrapper{
+    width: 280px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-style:italic;
+}
+
+
+
+.itemgridColor{
+    background-color: rgb(255, 247, 247);
+}
+
+.card-img{
+ 
+ width: 280px;
+ border-radius: 10px;
+ text-align: center;
+ height: 150px;
+}
+
+.card_title{
+
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 25px;
+
+}
+
+.card_prais{
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+
+.card_sub{
+    
+padding-top: 15px;
+padding-bottom: 15px;
+
+}
+
+
+
